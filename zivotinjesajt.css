@@ -1,0 +1,185 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+  background-color:black;
+  color:white;
+
+
+}
+.header{
+  text-align: center;
+  padding:30px;
+  margin:50px;
+}
+.zaglavlje{
+  background-color: #ffffff;
+  max-width: 2000px;
+  height: 200px;
+  margin-bottom: 5px;
+  font-size: 180px;
+  font-family: fantasy;
+  color: black 
+}
+.uvod {
+  text-align: center; 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px; 
+}
+.uvod p {
+  text-align: center;
+}
+
+.naslov {
+  font-size: 36px; 
+  font-weight: bold; 
+
+}
+
+.uvod span {
+  font-weight: bold; 
+}
+
+.ikon {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-right: 3px;
+  margin-top: 3px;
+  background-color: white;
+}
+
+.ikon:hover {
+  background-color: rgb(124, 33, 185);
+}
+
+.ikon:active {
+  background-color: rgb(124, 33, 185);
+  box-shadow: 0 5px rgb(124, 33, 185);
+  transform: translateY(4px);
+}
+
+.navigacija{
+  background-color: #ffffff;
+  color:white;
+  height:60px;
+  margin-top:20px;
+
+
+}
+.navigacija button{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #ffffff;
+  float:left;
+  height:60px;
+  color:black;
+  border: 1px dotted rgb(124, 33, 185);
+  font-size: 1em; 
+  font-weight: bold;
+}
+.navigacija button:hover {
+  background-color:purple;
+  text-transform: uppercase;
+  font-size:1.5em;
+}
+
+.navigacija button:active {
+  background-color:rgb(124, 33, 185);
+  box-shadow: 0 5px rgb(124, 33, 185);
+  transform: translateY(4px);
+}
+.navigacija button img{
+  width:30px;
+  height:30px;
+  padding:1px;
+  margin:3px;
+}
+.addMore{
+  border: none;
+  transition: all ease-in-out 0.1s;
+  cursor: pointer;
+}
+.addMore:hover{
+  border: 1px solid #030303;
+  background-color:  #030303;
+
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  font-size:3em;
+  padding:20px;
+  margin:60px;
+  justify-content:space-evenly;
+  gap: 8px;
+
+}
+.column{
+  min-height:100px;
+  flex-grow:4;
+  flex-shrink:4;
+  flex-basis:350px;
+  
+}
+.column img{
+  padding:5px;
+  width:100%;
+  vertical-align: middle;
+  transition: transform .2s;
+}
+.column > img:hover{
+  border:5px solid rgb(124, 33, 185);
+  border-style: dotted;
+  transform: scale(1.5); 
+  
+}
+@media (max-width:800px){
+  .column{
+    flex:50%;
+  }
+}
+@media (max-width:800px){
+  .header img {
+    flex:100%;
+  }
+}
+@media (max-width:600px){
+  .column{
+    flex:100%;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  color: white;
+  height: 100px;
+  border-top: 0.5px solid #333 ;
+
+}
+#mainFooter{
+  background:  #3333;
+  color:white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-top: 0.5px solid #333;
+  border-top-width: 1px;
+
+}
+
+p {
+  text-align:justify;
+}
+
+h1, span {
+  color:rgb(124, 33, 185);
+}
+span {
+  font-size: 20px;
+}
